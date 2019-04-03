@@ -6,9 +6,9 @@ Created on Thu Oct  4 18:25:16 2018
 """
 import pandas as pd
 
-in_file_path = 'C:/Users/mbray201/Desktop/market_intelligence/miBuilds/directory_listing.xlsx'
-out_file_path = 'C:/Users/mbray201/Desktop/market_intelligence/miBuilds/function_listing.xlsx'
-base_path = '//cable/west-groups/DIV/BSG/miPlatform/Analysis/126 miWebApps/projects/miBuilds_app_dev/'
+in_file_path = '//miBuilds/directory_listing.xlsx'
+out_file_path = '//miBuilds/function_listing.xlsx'
+base_path = '//projects/miBuilds_app_dev/'
 
 
 out_df = pd.DataFrame()
@@ -73,9 +73,9 @@ def parse_js_file(path):
                 functionNames.append(line.strip())
     return functionNames
 
-out_path = 'C:/Users/mbray201/Desktop/market_intelligence/miBuilds/complete_listing.xlsx'
-df1_path = 'C:/Users/mbray201/Desktop/market_intelligence/miBuilds/directory_listing.xlsx'
-df2_path = 'C:/Users/mbray201/Desktop/market_intelligence/miBuilds/function_listing.xlsx'
+out_path = '/miBuilds/complete_listing.xlsx'
+df1_path = '//miBuilds/directory_listing.xlsx'
+df2_path = '//miBuilds/function_listing.xlsx'
 df1 = pd.read_excel(df1_path)
 df2 = pd.read_excel(df2_path)
 df_out = pd.merge(df1, df2, how='left', on=['folder','filename'])
