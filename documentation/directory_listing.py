@@ -8,7 +8,7 @@ Created on Thu Oct  4 16:39:15 2018
 import os
 import pandas as pd
 
-path = '//cable/west-groups/DIV/BSG/miPlatform/Analysis/126 miWebApps/projects/miBuilds_app_dev'
+path = '//projects/miBuilds_app_dev'
 out_path = 'directory_listing.xlsx'
 
 file_names = []
